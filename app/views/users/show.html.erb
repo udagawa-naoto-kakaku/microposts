@@ -4,6 +4,6 @@
   <h2><%= @user.name %></h2>
   <p>メールアドレス：<%= @user.email %></p>
   <p>趣味：<%= @user.favorite %></p>
-  (<%= link_to "edit", edit_user_path(@user)%>/ｆ
+  (<%= link_to "edit", edit_user_path(@user)%> /
   <%= link_to "destroy", @user, method: :delete, data: { confirm: '削除してもよろしいですか？' } %>)
 </h1>
