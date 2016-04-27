@@ -10,6 +10,8 @@
         <p>趣味：<%= @user.favorite %></p>
         (<%= link_to "edit", edit_user_path(@user)%> /
         <%= link_to "destroy", @user, method: :delete, data: { confirm: '削除してもよろしいですか？' } %>)
+        <%= link_to "follower", followings_user_path(@user) %>
+        <%= link_to "followed", followed_user_path(@user) %>
 
       </h1>
     </section>
